@@ -1,11 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;400;500;600;700;800&display=swap");
 
-*{
-    font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Work Sans', sans-serif;
-margin: 0;
-padding: 0;
+/* shared style  */
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.txt-color-01 {
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.txt-color-02 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav css start  */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 110px;
+  /* height: 190px; */
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-icon h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.nav-items-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-items-container ul li {
+  margin-left: 30px;
+  color: #3c354f;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.follow-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: rgba(11, 2, 35, 0.1);
+  padding: 15px 20px;
+}
+
+/* Banner css start  */
+.banner-section-container {
+  display: flex;
+  /* margin: 38px 240px; */
+  align-items: center;
+  justify-content: space-around;
+}
+.banner-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-title-big {
+  text-align: center;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.banner-text p {
+  color: rgba(83, 76, 100, 1);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.btn {
+  padding: 21px 40px;
+  border-radius: 48px;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+.btn-secondary {
+  background-color: rgba(78, 197, 247, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.banner-text button {
+  margin-top: 40px;
+}
+.ml {
+  margin-left: 24px;
+}
+.banner-section-container {
+  background-image: url("images/Group\ 14.png"),
+    linear-gradient(
+      223deg,
+      rgba(140, 87, 238, 0.03) 0%,
+      rgba(241, 68, 174, 0.03) 100%
+    );
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+.banner-section-container {
+  padding: 20px;
+  /* height: 80vh; */
+}
+
+.banner-img img {
+  height: 500px;
+}
+
+/* responsive code  */
+/* for mobile  */
+@media only screen and (max-width: 576px) {
+  .nav-container,
+  .nav-items-container ul {
+    flex-direction: column;
+  }
+
+  .banner-section-container {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .nav-container ul li {
+    margin-top: 36px;
+  }
+  .banner-img img {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+  }
+  .banner-text {
+    padding: 0px;
+  }
+  .banner-title {
+    color: #0b0223;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .banner-title-big {
+    font-size: 60px;
+  }
+  .ml {
+    margin-left: 5px;
+  }
+}
+
+/* for tab  */
+@media only screen and (max-width: 960px) and (min-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .banner-section-container {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
 }
