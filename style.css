@@ -171,8 +171,8 @@ margin-right: 180px; */
   width: 500px;
   margin: 20px auto;
 }
-.gamer-desc{
-    margin-top: 10px;
+.gamer-desc {
+  margin-top: 10px;
 }
 
 .know-btn {
@@ -187,6 +187,50 @@ margin-right: 180px; */
   color: #534c64;
   font-size: 1.4rem;
   font-weight: 700;
+}
+
+/* game section  */
+section {
+  margin-top: 80px;
+}
+.section-title {
+  color: #0b0223;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.game-title-desc {
+  color: #534c64;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card-img {
+  width: 240px;
+  height: 300px;
+  flex-shrink: 0;
+}
+.card {
+  padding: 12px;
+}
+.card-desc {
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 240px;
+  margin-top: 18px;
+}
+
+.game-cards {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-top: 20px;
 }
 
 /* responsive code  */
@@ -232,7 +276,6 @@ margin-right: 180px; */
   }
   .game-text-container p {
     width: 90%;
-
   }
   .know-btn {
     float: none;
@@ -245,18 +288,34 @@ margin-right: 180px; */
     /* margin-left: 180px;
 margin-right: 180px; */
   }
+  .game-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .game-cards {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
 }
 
 /* for tab  */
 @media only screen and (max-width: 960px) and (min-width: 576px) {
-  .nav-container ,
-  .gammer-main-container
-
-  {
+  .nav-container,
+  .gammer-main-container {
     flex-direction: column;
   }
   .banner-section-container {
     flex-direction: column-reverse;
     gap: 10px;
+  }
+  .game-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-cards {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
   }
 }
