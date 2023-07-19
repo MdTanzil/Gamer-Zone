@@ -58,6 +58,8 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
+  
 }
 .follow-us {
   display: flex;
@@ -254,10 +256,6 @@ section {
   height: 40px;
   width: 40px;
 }
-.watch-now-icon p {
-  /* text-align: center; */
-}
-
 .card-desc {
   color: #534c64;
   font-size: 1rem;
